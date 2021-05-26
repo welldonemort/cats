@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cats</title>
+</head>
+<body>
+    <div class="header-background"></div>
+    <header>
+        <div class="main-container header-container">
+            <div class="header-container__nav">
+                <div class="header__img-and-nav">
+                    <img src="./img/ic-main.svg" alt="Main icon" class="main-icon">
+                    <nav class="header-navigation">
+                        <ul class="navigation">
+                            <li><a href="#">Main</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Profile</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="call-box">
+                    <span><a class="bold-24-49" href="tel:+544 3490 00000">+544 3490 00000</a></span>
+                    <div class="normal-18-22 call-me">Звони скорее!</div>
+                </div>
+            </div>
+            <div class="bold-38-46 found-cats">Найдено 349 котов</div>
+        </div>
+    </header>
+    <section class="main-container cards-section">
+        <div class="sort">
+            <span class="sort__item bold-18-22">Сортировать по:</span>
+            <button class="sort__item normal-18-22-black sort__button grow">
+                Цене
+                <img src="./img/arrow.svg" alt="Arrow">
+            </button>
+            <button class="sort__item normal-18-22-black sort__button grow">
+                Возрасту
+                <img src="./img/arrow.svg" alt="Arrow">
+            </button>
+        </div>
+        <div class="cats">
+            <div class="cats__item">
+                <div class="discount-and-heart">
+                    <img src="./img/discount.svg" alt="Discount">
+                    <img class="heart-img grow" id="heart-img-1" src="./img/heart-disabled.svg" alt="Heart disabled"  onclick="changeImage(this.id)">
+                </div>
+                <div class="cats-item__text-part">
+                    <span class="bold-24-29">Кот полосатый</span>
+                    <div class="cat-info">
+                        <div class="cat-color cat-info__item normal-12-15-black">Коричневый<br>окрас</div>
+                        <div class="cat-age cat-info__item normal-12-15-black"><span class="bold-16-20">2 мес.</span><br>Возраст</div>
+                        <div class="cat-legs-count cat-info__item normal-12-15-black"><span class="bold-16-20">4</span><br>Кол-во лап</div>
+                    </div>
+                    <span class="bold-24-29">30 000 руб.</span>
+                </div>
+                <button class="buy-button-enabled bold-16-20-white fade">Купить</button>
+            </div>
+            <div class="cats__item">
+                <div class="discount-and-heart cat2">
+                    <img src="" alt="">
+                    <img class="heart-img grow" id="heart-img-2" src="./img/heart-disabled.svg" alt="Heart disabled"  onclick="changeImage(this.id)">
+                </div>
+                <div class="cats-item__text-part">
+                    <span class="bold-24-29">Кот полосатый</span>
+                    <div class="cat-info">
+                        <div class="cat-color cat-info__item normal-12-15-black">Коричневый<br>окрас</div>
+                        <div class="cat-age cat-info__item normal-12-15-black"><span class="bold-16-20">2 мес.</span><br>Возраст</div>
+                        <div class="cat-legs-count cat-info__item normal-12-15-black"><span class="bold-16-20">4</span><br>Кол-во лап</div>
+                    </div>
+                    <span class="bold-24-29">40 000 руб.</span>
+                </div>
+                <button class="buy-button-enabled bold-16-20-white buy-button-disabled">Продан</button>
+            </div>
+            <div class="cats__item">
+                <div class="discount-and-heart cat3">
+                    <img src="" alt="">
+                    <img class="heart-img grow" id="heart-img-3" src="./img/heart-disabled.svg" alt="Heart disabled"  onclick="changeImage(this.id)">
+                </div>
+                <div class="cats-item__text-part">
+                    <span class="bold-24-29">Кот полосатый</span>
+                    <div class="cat-info">
+                        <div class="cat-color cat-info__item normal-12-15-black">Коричневый<br>окрас</div>
+                        <div class="cat-age cat-info__item normal-12-15-black"><span class="bold-16-20">2 мес.</span><br>Возраст</div>
+                        <div class="cat-legs-count cat-info__item normal-12-15-black"><span class="bold-16-20">4</span><br>Кол-во лап</div>
+                    </div>
+                    <span class="bold-24-29">20 000 руб.</span>
+                </div>
+                <button class="buy-button-enabled bold-16-20-white fade">Купить</button>
+            </div>
+            <div class="cats__item">
+                <div class="discount-and-heart">
+                    <img src="" alt="">
+                    <img class="heart-img grow" id="heart-img-4" src="./img/heart-disabled.svg" alt="Heart disabled"  onclick="changeImage(this.id)">
+                </div>
+                <div class="cats-item__text-part">
+                    <span class="bold-24-29">Кот полосатый</span>
+                    <div class="cat-info">
+                        <div class="cat-color cat-info__item normal-12-15-black">Коричневый<br>окрас</div>
+                        <div class="cat-age cat-info__item normal-12-15-black"><span class="bold-16-20">2 мес.</span><br>Возраст</div>
+                        <div class="cat-legs-count cat-info__item normal-12-15-black"><span class="bold-16-20">4</span><br>Кол-во лап</div>
+                    </div>
+                    <span class="bold-24-29">25 000 руб.</span>
+                </div>
+                <button class="buy-button-enabled bold-16-20-white fade">Купить</button>
+            </div>
+            <div class="cats__item">
+                <div class="discount-and-heart cat3">
+                    <img src="./img/discount.svg" alt="Discount">
+                    <img class="heart-img grow" id="heart-img-5" src="./img/heart-disabled.svg" alt="Heart disabled"  onclick="changeImage(this.id)">
+                </div>
+                <div class="cats-item__text-part">
+                    <span class="bold-24-29">Кот полосатый</span>
+                    <div class="cat-info">
+                        <div class="cat-color cat-info__item normal-12-15-black">Коричневый<br>окрас</div>
+                        <div class="cat-age cat-info__item normal-12-15-black"><span class="bold-16-20">2 мес.</span><br>Возраст</div>
+                        <div class="cat-legs-count cat-info__item normal-12-15-black"><span class="bold-16-20">4</span><br>Кол-во лап</div>
+                    </div>
+                    <span class="bold-24-29">30 000 руб.</span>
+                </div>
+                <button class="buy-button-enabled bold-16-20-white fade">Купить</button>
+            </div>
+            <div class="cats__item">
+                <div class="discount-and-heart cat2">
+                    <img src="" alt="">
+                    <img class="heart-img grow" id="heart-img-6" src="./img/heart-disabled.svg" alt="Heart disabled"  onclick="changeImage(this.id)">
+                </div>
+                <div class="cats-item__text-part">
+                    <span class="bold-24-29">Кот полосатый</span>
+                    <div class="cat-info">
+                        <div class="cat-color cat-info__item normal-12-15-black">Коричневый<br>окрас</div>
+                        <div class="cat-age cat-info__item normal-12-15-black"><span class="bold-16-20">2 мес.</span><br>Возраст</div>
+                        <div class="cat-legs-count cat-info__item normal-12-15-black"><span class="bold-16-20">4</span><br>Кол-во лап</div>
+                    </div>
+                    <span class="bold-24-29">10 000 руб.</span>
+                </div>
+                <button class="buy-button-enabled bold-16-20-white buy-button-disabled">Продан</button>
+            </div>
+        </div>
+        <div class="button-holder">
+            <button class="more-button normal-14-17 grow">Показать еще 20</button>
+            <button id="myBtn" class="blue-arrow grow" onclick="topFunction()"><img src="./img/arrow-up.png" alt="Arrow up"></button>
+        </div>
+    </section>
+    <section class="form-holder">
+        <div class="form-text">
+            <div class="bold-48-59 form-span-1">Успей купить!</div>
+            <div class="normal-28-26">Подпишись и успей<br>словить все акции</div>
+        </div>
+        <div class="form">
+            <div class="input-and-button">
+                <input id="input-email" type="email" class="input-email" placeholder="Email">
+                <button class="subscribe-button fade" onclick="ValidateEmail(document.getElementById('input-email'))">Подписаться</button>
+            </div>
+            <div>
+                <input class="custom-checkbox" id="checkbox" type="checkbox">
+                <label for="checkbox" class="normal-14-17-white">Подписаться на новости</label>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
